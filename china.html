@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML</title>
+<style type="text/css"></style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="html.css">
+ <div id="sectionFavouritePlaces">
+      <div class="favourite-places-bg-container">
+       <h1 class="favourite-places-heading">Favourite Places</h1>
+       <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTheGreatWallOfChinaDetailedView')">
+         <div>
+           <h1 class="favourite-place-card-heading">The Great Wall Of China</h1>
+           <p class="favourite-place-card-description">
+             The Great Wall of China is an ancient series of walls and fortifications, totaling more than 13,000 miles in length, located in northern China.           </p>
+         </div>
+         <img
+           src="https://images.pexels.com/photos/1653823/pexels-photo-1653823.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1"
+         />
+       </div>
+       <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionImperialPalaceDetailedView')">
+         <div>
+           <h1 class="favourite-place-card-heading">Imperial Palace</h1>
+           <p class="favourite-place-card-description">
+             A Chinese palace is an imperial complex where the court, civil government, royal garden and defensive fortress resided. Its structures are considerable and elaborate.
+           </p>
+         </div>
+         <img
+           src="https://i.pinimg.com/originals/2d/7d/0c/2d7d0c86ba3a339b8b28577ac72cdf86.jpg"
+           class="favourite-place-card-image"
+         />
+       </div>
+       <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionSummerPalaceDetailedView')">
+         <div>
+           <h1 class="favourite-place-card-heading">Summer Palace</h1>
+           <p class="favourite-place-card-description">
+             The Summer Palace, in northwest Beijing, is said to be the best-preserved imperial garden in the world, and the largest of its kind still in existence in China. It is only a short drive of 15 km from central Beijing, but it seems like another world.        </p>
+         </div>
+         <img
+           src="https://cdn.audleytravel.com/3969/2834/79/1349044-the-summer-palace-beijing.jpg"
+           class="favourite-place-card-image"
+         />
+       </div>
+       <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTianTanBuddhaDetailedView')">
+         <div>
+           <h1 class="favourite-place-card-heading">Tian Tan Buddha</h1>
+           <p class="favourite-place-card-description">
+            The Tian Tan Buddha is one of the largest seated Buddha images in the world and is a sight to behold.It is a popular tourist attraction and source of pride for Hong Kong residents for what it represents spiritually, culturally, and from an artistic and engineering standpoint.           </p>
+         </div>
+         <img
+           src="https://cdn.freeyork.org/wp-content/uploads/tia/n_t/an-/201/801/112/0-5/a57/cb7/5a2/8f7/Tian_Tan-2018011120-5a57cb75a28f7.jpg"
+           class="favourite-place-card-image"
+         />
+       </div>
+     <div>
+      <a href="HTML2.html" class="btn btn-dark" onclick="display('sectionSelectionCountry')">
+                back
+     </a>
+      </div>
+    </div>
+    </div>
+     <div id="sectionTheGreatWallOfChinaDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://www.wallpaperflare.com/static/477/36/922/great-wall-of-china-great-wall-china-wallpaper.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.news9live.com/h-upload/2022/11/10/580099-greatwallofchina.jpg" 
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="http://2.bp.blogspot.com/-eMWiKblc06k/UcL5TtT7d5I/AAAAAAAABFY/BbUb6D0qEpY/s1600/China-The-Great-Wall.jpg" 
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">The Great Wall Of China</h1>
+            <p class="detailed-view-card-description">
+              The Great Wall of China is an iconic symbol of ancient Chinese engineering and defensive prowess. Stretching over 13,000 miles across northern China, it was constructed over centuries by various Chinese dynasties to protect against invasions from nomadic tribes to the north. Originally built with rammed earth, brick, and stone, the wall served as a formidable barrier, with watchtowers and fortresses strategically placed along its length. Despite its name, the Great Wall isn't a single continuous wall but rather a series of walls and fortifications built over different historical periods. Today, it stands as one of the most impressive architectural feats in human history and a UNESCO World Heritage Site, attracting millions of visitors each year.            </p>
+          </div>
+           <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+              back
+           </button>
+        </div>
+      </div>
+    </div>
+    <div id="sectionImperialPalaceDetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">Detailed View</h1>
+        <div class="detailed-view-card-container">
+          <div id="goldenTempleCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#goldenTempleCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#goldenTempleCarousel" data-slide-to="1"></li>
+              <li data-target="#goldenTempleCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.freeimages.com/images/large-previews/5cd/china-imperial-palace-1211166.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.freeimages.com/images/large-previews/25d/china-imperial-palace-1211187.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="https://charest.net/wp-content/gallery/exploring-china/dsc_0116.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#goldenTempleCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#goldenTempleCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="detailed-view-card-text-container">
+            <h1 class="detailed-view-card-heading">Imperial Palace</h1>
+            <p class="detailed-view-card-description">
+              The Imperial Palace of China, also known as the Forbidden City, is a sprawling architectural marvel located in the heart of Beijing. Built during the Ming Dynasty in the early 15th century and expanded during the Qing Dynasty, it served as the imperial palace and political center of China for nearly 500 years. Enclosed by towering walls and a moat, the Forbidden City was off-limits to the general public for centuries, hence its name. It consists of over 900 buildings with intricate golden roofs, exquisite courtyards, and grand halls, showcasing traditional Chinese architecture and design. Today, the Forbidden City is a UNESCO World Heritage Site and one of China's most visited tourist attractions, offering a glimpse into the opulent lifestyle of China's emperors and the rich history of the country.
+          </div>
+        </div>
+        <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+          back
+        </button>
+      </div>
+    </div>
+    <div id="sectionSummerPalaceDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+              <div id="mysorePalaceCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#mysorePalaceCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#mysorePalaceCarousel" data-slide-to="1"></li>
+                  <li data-target="#mysorePalaceCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://www.you.co/en-SG/wp-content/uploads/sites/2/2019/10/eb256de36c6d179d6a6a942382725465-summer-palace.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/2-summer-palace-beijing-china-jon-berghoff.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://govt.chinadaily.com.cn/images/202010/19/5f8d628b498eaba5b820c684.jpeg" class="d-block w-100" alt="..." />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#mysorePalaceCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#mysorePalaceCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="detailed-view-card-text-container">
+                <h1 class="detailed-view-card-heading">Summer Palace</h1>
+                <p class="detailed-view-card-description">
+                  The Summer Palace in Beijing, China, is a renowned imperial garden and palace complex, recognized for its exquisite beauty and historical significance. Built in the Qing Dynasty as a retreat for emperors to escape the summer heat of the capital, it spans over 700 acres and is dominated by the tranquil Kunming Lake.The palace grounds feature a harmonious blend of pavilions, halls, temples, and bridges, surrounded by lush greenery and scenic landscapes. Key attractions include the iconic Longevity Hill, adorned with majestic structures like the Tower of Buddhist Incense, and the Marble Boat, a symbol of imperial extravagance.<br>
+Designated as a UNESCO World Heritage Site, the Summer Palace preserves centuries of Chinese architectural and landscape design. It continues to captivate visitors with its serene ambiance, cultural significance, and timeless beauty, offering a glimpse into China's rich imperial history.             </p>
+              </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+              </button>
+          </div> 
+        </div>
+	<div id="sectionTianTanBuddhaDetailedView">
+          <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+              <div id="varanasiTempleCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#varanasiTempleCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#varanasiTempleCarousel" data-slide-to="1"></li>
+                  <li data-target="#varanasiTempleCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.BQ8o1FfdS5gXavkO3bkVYQHaE8&pid=Api&P=0&h=180" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.awaygowe.com/wp-content/uploads/2012/12/hongkong-bigbuddha-featured2.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://traveldigg.com/wp-content/uploads/2016/10/Tian-Tan-Buddha-Photography.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#varanasiTempleCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#varanasiTempleCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="detailed-view-card-text-container">
+                <h1 class="detailed-view-card-heading">Tian Tan Buddha</h1>
+                <p class="detailed-view-card-description">
+                  Tian Tan Buddha, also known as the Big Buddha, is a towering symbol of peace and spirituality nestled amidst the scenic beauty of Lantau Island in Hong Kong, China. Crafted from bronze and standing at an impressive height of 34 meters, this magnificent statue gazes serenely over the surrounding landscape, exuding a sense of calm and tranquility.
+Constructed in 1993, Tian Tan Buddha is a testament to both traditional Buddhist artistry and modern engineering prowess. Its serene countenance and graceful posture reflect the principles of compassion, wisdom, and inner peace that lie at the heart of Buddhist teachings.
+Visitors to Tian Tan Buddha are greeted by a sense of awe and reverence as they ascend the 268 steps leading to its base, a journey that mirrors the spiritual path toward enlightenment. Along the way, the lush greenery of Lantau Island provides a picturesque backdrop, enhancing the sense of serenity and harmony.                </p>
+              </div>
+            </div>
+              <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+              </button>
+         </div>
+      </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
